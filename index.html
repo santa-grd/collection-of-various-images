@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+			<span>Category:</span> 
+			<div id="category-buttons" translate="no">
+				<button onclick="filterImages('Category')"></button>
+			</div>
+				<button id="all-button" onclick="toggleCategories()" translate="no">All</button>
+				<button id="info-button" onclick="toggleInfoModal()" translate="no">?</button>
+		</nav>
+	</header>
+			
+			<main>
+				<div id="gallery"></div>
+				<div id="galleryimg"></div>
+			</main>
+
+			<div id="info-modal" class="modal">
+				<div class="modal-content">
+					<span class="close" onclick="toggleInfoModal()" translate="no">&times;</span>
+					<h2>About This Site</h2>
+					<p>This site allows you to explore various categories of images. The images are sourced from online platforms, and you can download them by clicking the download button.</p>
+					<h3>Image Sources</h3>
+					<p>The images are sourced from free online image hosting platforms like Pinterest. Ensure to respect copyright and usage rights when downloading and using images.</p>
+					<h3>Download Tips</h3>
+					<p>Click the download button to save images to your device. If you encounter issues, ensure that your browser allows downloads from the source site.</p>
+					<ul class="wr">
+					<h4>another way if the image cannot be downloaded;</h4>
+					<p>on the phone press and hold the image or on the computer right click.</p>
+					</ul>
+					<h3>Suggestions</h3>
+					<p>If you have suggestions to improve this site, feel free to share them with us!</p>
+				</div>
+			</div>
+	<script src="images.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
